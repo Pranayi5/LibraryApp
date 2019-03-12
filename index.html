@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library App</title>
+	<link rel='stylesheet' href='main.css'>
+</head>
+<body>
+
+	<div class='container'> 
+		<section class='add-section'>
+			<form id='input-form' method="POST">
+				<input type='text' class='input-field' id='title' value='' name='title' placeholder="Title" required />
+				<input type='text' class='input-field' id='author' name='author' value='' placeholder="Author" required />
+				<input type='number' class='input-field' id='pages' name='pages' value='' placeholder="Pages" required />
+				<div id='checkbox-div'><input type='checkbox' id='check' name='Read'> 
+				<label for='check'>Read</label></div>
+				<button type='submit' id='add-button' > Add Book </button>
+
+			</form>
+		</section>
+		<section class='list-section'>
+			<h1>Books</h1>
+			<table>
+				<thead>
+					<tr>
+						<td>Title</td>
+						<td>Author</td>
+						<td>Pages</td>
+						<td>Read</td>
+						<td>Delete</td>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>The Silimarillion</td>
+						<td>J.R.R Tolkein</td>
+						<td>365</td>
+						<td><button class='not-read-button'></button></td>
+						<td><button class='delete-button'></button></td>
+					</tr>
+						<tr>
+						<td>The Bitcoin Standard</td>
+						<td>Saifedean Ammous</td>
+						<td>305</td>
+						<td><button class='read-button'></button></td>
+						<td><button class='delete-button'></button></td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</section>
+	</div>
+<script src='script.js'></script>
+</body>
+</html>
